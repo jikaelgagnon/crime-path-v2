@@ -1,6 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+<div class="report_container">
     <h1>{% block title %}Report a crime{% endblock %}</h1>
     <form method="post">
        <div class="form-group">
@@ -30,4 +31,5 @@
        <button type="submit" class="btn btn-primary">Submit</button>
 
     </form>
+</div>
 {% endblock %}
