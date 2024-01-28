@@ -20,11 +20,14 @@ def index():
         end_location = form.end_location.data
 
         print(app.config['User reported'])
-        year = int(form.year.data)
+        if form.year.data:
+            year = int(form.year.data)
+        else:
+            year = 2024
         df = get_df(year,categories=categories,times_of_day=times_of_day)
         if 'User reported' in categories:
             for report in app.config['User reported']:
-                df = add_row(df, category='User reported', latitude=report['Latitude'], longitude=report['Longitude'])
+                df = add_row(df, category=f"{report['crime']} - User Reported", latitude=report['Latitude'], longitude=report['Longitude'])
         if start_location:
             lati, longi = geocode_address(start_location)
             df = add_row(df, category='Start location', latitude=lati, longitude=longi)
