@@ -1,30 +1,37 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>Create a map</h1>
+
+<div class="container_form">
+<h1 class="title_div">Generate a map</h1>
     <div class="content-section">
         <form method="POST" action="">
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
-                <div class="form-group">
+                <div class="form-group categories_div">
                     {{ form.categories.label(class="form-control-label") }}
                     {{ form.categories(class="form-control-lg") }}
                 </div>
-                <div class="form-group">
+                <div class="form-group time_div">
                     {{ form.times_of_day.label(class="form-control-label") }}
                     {{ form.times_of_day(class="form-control-lg") }}
                 </div>
-                <div class="form-group">
-                    {{ form.start_location.label(class="form-control-label") }}
-                    {{ form.start_location(class="form-control-lg") }}
-                </div>
-                <div class="form-group">
-                    {{ form.end_location.label(class="form-control-label") }}
-                    {{ form.end_location(class="form-control-lg") }}
+                <div class="start_end">
+                    <div class="form-group location_top">
+                        {{ form.start_location.label(class="form-control-label") }}
+                        <br>
+                        {{ form.start_location(class="form-control-lg") }}
+                    </div>
+                    <div class="form-group location_bottom">
+                        {{ form.end_location.label(class="form-control-label") }}
+                        <br>
+                        {{ form.end_location(class="form-control-lg") }}
+                    </div>
                 </div>
             </fieldset>
-            <div class="form-group">
+            <div class="form-group submit_div">
                 {{ form.submit(class="btn btn-primary") }}
             </div>
         </form>
     </div>
+</div>
 {% endblock content %}

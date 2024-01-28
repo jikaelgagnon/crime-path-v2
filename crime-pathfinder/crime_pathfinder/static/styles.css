@@ -1,0 +1,119 @@
+
+
+ul {
+    list-style: none;
+  }
+
+
+body{
+  background-color: #013a63;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container_form {
+  padding-left: 45%;
+}
+
+.form-group {
+  width: 400px;
+}
+
+.form-group.categories_div{
+  background-color: #61a5c2;
+  border-radius: 5%;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  box-shadow: 5px 5px 5px 5px black;
+
+}
+
+.form-group.time_div{
+  margin-top: 60px;
+  background-color: #61a5c2;
+  border-radius: 5%;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  box-shadow: 5px 5px 5px 5px black;
+}
+
+.start_end{
+  margin-top: 60px;
+  background-color: #61a5c2;
+  border-radius: 5%;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  box-shadow: 5px 5px 5px 5px black;
+}
+
+.form-group.submit_div{
+  padding-top: 50px;
+  padding-left: 140px;
+}
+
+.title_div{
+  color: #61a5c2;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.report_container{
+  padding-left: 45%;
+  color: #61a5c2;
+  padding-top: 50px;
+}
+
+.form-group.crime{
+  margin-top: 60px;
+  background-color: #61a5c2;
+  border-radius: 20%;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  box-shadow: 5px 5px 5px 5px black;
+}
+
+label{
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.title_div.display_map{
+  padding-left: 45%;
+  color: #61a5c2;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chart{
+  padding-bottom: 50px;
+}
+
+.map_container{
+  padding-bottom: 100px;
+}
+
+.location_top{
+  padding-left: 40px;
+}
+
+.location_bottom{
+  padding-left: 40px;
+}
+
+.form-control-label{
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.form-control-lg{
+  font-weight: lighter;
+  font-size: 13px;
+}
