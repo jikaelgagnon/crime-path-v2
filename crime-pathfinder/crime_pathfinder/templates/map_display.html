@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+</style>
+<body>
+<h1>View your map</h1>
+<div id='chart' class='chart', style="width:1200px; height: 700px;" ></div>
+</body>
+
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+var graphs = {{graphJSON | safe}};
+Plotly.plot('chart',graphs,{});
+</script>
+{% endblock content %}
+
