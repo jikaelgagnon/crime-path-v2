@@ -14,6 +14,7 @@ class MapForm(FlaskForm):
     times_of_day_en = ['Day','Evening','Night']
     year_min = 2015
     year_max = 2025
+    year = StringField(label='Year')
     categories = MultiCheckboxField(label='Categories', choices=categories_en)
     times_of_day = MultiCheckboxField('Times of Day', choices=times_of_day_en)
     start_location = StringField(label='Start location')

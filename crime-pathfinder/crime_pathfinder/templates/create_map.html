@@ -7,6 +7,15 @@
         <form method="POST" action="">
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
+                <div class="start_end">
+                    <div class="form-group location_bottom">
+                        {{ form.year.label(class="form-control-label") }}
+                        <br>
+                        {{ form.year(class="form-control-lg") }}
+                    </div>
+                </div>
+                <br>
+                <br>
                 <div class="form-group categories_div">
                     {{ form.categories.label(class="form-control-label") }}
                     {{ form.categories(class="form-control-lg") }}

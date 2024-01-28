@@ -5,8 +5,8 @@ import numpy as np
 MAPBOX_API_KEY = 'pk.eyJ1IjoibW9ua3oxMSIsImEiOiJja3ZjcGpkcmNhemljMnBuemllb294Z20yIn0.LFHcV2_PcE_wc5ttNnMM1g'
 px.set_mapbox_access_token(MAPBOX_API_KEY)
 
-categories_fr = ['Introduction','Vol dans / sur véhicule à moteur','Vol de véhicule à moteur','Méfait','Vol qualifié','Infraction entraînant la mort']
-categories_en = ['Breaking and entering','Theft from a vehicle/theft of vehicle parts','Vehicle theft','General damages','Theft with violence','Murder']
+categories_fr = ['Introduction', 'Méfait', 'Vol dans / sur véhicule à moteur', 'Vol de véhicule à moteur', 'Vols qualifiés', 'Infractions entrainant la mort']
+categories_en = ['Breaking and entering','General damages','Theft from a vehicle/theft of vehicle parts','Vehicle theft','Theft with violence','Murder']
 categories_fr_to_en = dict(zip(categories_fr,categories_en))
 
 times_of_day_fr = ['jour','soir','nuit']
